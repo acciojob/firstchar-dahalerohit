@@ -1,7 +1,11 @@
 function firstChar(text) {
   // your code here
-	let trimmed = text.trim();
-   return trimmed.length > 0 ? trimmed[0] : "";
+for (let i = 0; i < text.length; i++) {
+    if (text[i] !== " ") {
+      return text[i];
+    }
+  }
+  return "";	
 }
 
 // Do not change the code below
